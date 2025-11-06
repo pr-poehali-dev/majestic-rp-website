@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "name": "Get all available promo codes",
+      "method": "GET",
+      "expectedStatus": 200,
+      "expectedBody": [],
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Create new promo code",
+      "method": "POST",
+      "body": {
+        "action": "create",
+        "code": "TEST123",
+        "title": "Test Promo",
+        "description": "Test description",
+        "price": 100,
+        "seller_id": 1
+      },
+      "expectedStatus": 201,
+      "expectedBody": {
+        "id": "number",
+        "message": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

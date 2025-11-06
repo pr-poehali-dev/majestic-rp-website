@@ -1,0 +1,28 @@
+{
+  "tests": [
+    {
+      "name": "Get chat messages for promo code",
+      "method": "GET",
+      "path": "/?promo_id=1",
+      "expectedStatus": 200,
+      "expectedBody": [],
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Send chat message",
+      "method": "POST",
+      "body": {
+        "promo_id": 1,
+        "sender_id": 1,
+        "message": "Hello, is this promo code still available?"
+      },
+      "expectedStatus": 201,
+      "expectedBody": {
+        "id": "number",
+        "created_at": "string",
+        "message": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
