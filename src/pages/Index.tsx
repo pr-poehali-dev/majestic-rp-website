@@ -90,9 +90,7 @@ const Index = () => {
         ></div>
         
         <div className="relative z-10 text-center px-4 animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 glow-purple">
-            MAJESTIC RP
-          </h1>
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 glow-purple">ILLUSION Role Play</h1>
           <p className="text-xl md:text-2xl mb-8 text-muted-foreground">
             Создай свою историю в мире безграничных возможностей
           </p>
