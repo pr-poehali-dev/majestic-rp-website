@@ -306,7 +306,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => setCurrentSection('home')}>
             <Icon name="Gamepad2" className="w-8 h-8 text-primary" />
-            <span className="text-2xl font-bold glow-purple">MAJESTIC</span>
+            <span className="text-2xl font-bold glow-purple">ILLUSION Role Play</span>
           </div>
 
           <div className="hidden md:flex gap-6">
